@@ -23,8 +23,6 @@ your own software project
 - A lecture
    - most of the time it's you coding and not me talking
 
-Note:
-   this is a note
 ---
 
 ## What TDD is
@@ -146,7 +144,7 @@ git init
 - Open your IDE
 - We'll use Gradle for building and running our tests
 - [JunitSetup Example Project](https://github.com/junit-team/junit5-samples/tree/r5.4.0/junit5-jupiter-starter-gradle)
-
+- 
 
 ---
 
