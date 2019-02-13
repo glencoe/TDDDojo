@@ -2,6 +2,14 @@
 
 ---
 
+You can follow these slides under
+
+http://glencoe.github.com/TDDDojo/
+
+<img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=http%3A%2F%2Fglencoe.github.io%2FTDDDojo&amp;qzone=1&amp;margin=0&amp;size=400x400&amp;ecc=L" alt="qr code" />
+
+---
+
 ## What this course is
 - A hands on exercise in TDD
 - A platform for your questions
@@ -112,8 +120,7 @@ your own software project
 ---
 
 ## Nano-Cycle - seconds
-Add pictures?\\
-source http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html
+Corresponds to the three laws
 - write test
 - <span style="color: #cc0000">run tests</span>
 - write production code
@@ -123,10 +130,7 @@ source http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html
 ---
 
 ## Micro-Cycle - minutes
-- <span style="color: #cc0000">red</span>
-- <span style="color: #00b300">green</span>
-- refactor
-- repeat
+![micro-cycle](http://marcabraham.files.wordpress.com/2012/04/06_red_green_refactor.jpg)
 
 ---
 
@@ -134,17 +138,40 @@ source http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html
 
 ---
 
+## Programming Language
+Let's choose our language:
+- Java
+- Python
+- Ruby
+- C
+
+---
+
 ## Setup
-- Create a repo
+- Create a repo on github or our [bitbucket server](http://bitbucket.es.uni-due.de:7990)
+- Clone the TDDDojo from github, here you'll find examples to get you started
 ```bash
-mkdir TDDDojo
-cd TDDDojo
+git clone https://github.com/glencoe/TDDDojo.git
+mkdir MyNewProject
+cp -r TDDDojo/python/* MyNewProject/
+cd MyNewProject
 git init
+git remote add origin https://your-remote-repos-address
+git add -A
+git commit -m "initial commit"
+git push
 ```
-- Open your IDE
-- We'll use Gradle for building and running our tests
-- [JunitSetup Example Project](https://github.com/junit-team/junit5-samples/tree/r5.4.0/junit5-jupiter-starter-gradle)
-- 
+
+---
+
+## The Testing Framework
+- Java: Junit5
+  - automatically provided through gradle wrapper
+- Python: unittest (from python standard lib)
+- ruby: MiniTest 
+```bash
+gem install minitest
+```
 
 ---
 
@@ -154,7 +181,6 @@ Write a function that yields the prime factors for a given number
 ---
 
 ## First Test
-
 ```java
 @Test
 void one(void) {
