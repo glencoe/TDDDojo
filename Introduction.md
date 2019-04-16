@@ -144,6 +144,14 @@ Let's choose our language:
 - Python
 - Ruby
 - C
+- Clojure
+
+---
+
+## The Testing Framework
+- For C install [ceedling](https://github.com/ThrowTheSwitch/Ceedling)
+- For Clojure install [leiningen build tool](https://leiningen.org/)
+- For other languages checkout the corresponding directory in the TDD Dojo repo and read the README.md
 
 ---
 
@@ -160,17 +168,6 @@ git remote add origin https://your-remote-repos-address
 git add -A
 git commit -m "initial commit"
 git push
-```
-
----
-
-## The Testing Framework
-- Java: Junit5
-  - automatically provided through gradle wrapper
-- Python: unittest (from python standard lib)
-- ruby: MiniTest 
-```bash
-gem install minitest
 ```
 
 ---
