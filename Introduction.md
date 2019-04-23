@@ -40,12 +40,12 @@ your own software project
 ---
 
 ## What TDD Is Not
-- A cooking recipe producing good code automatically
-- You can still mess up
-- You still have to design
 - A way to find every possible bug
-- You'll still have to write other tests
 - A dogmatic rulebook you always have to follow
+- A cooking recipe producing good code automatically
+	- You can still mess up <!-- .element: class="fragment" -->	
+	- You still have to design <!-- .element: class="fragment" -->
+	- You'll still have to write other tests <!-- .element: class="fragment" -->
 
 ---
 
@@ -145,6 +145,7 @@ Let's choose our language:
 - Ruby
 - C
 - Clojure
+- Rust
 
 ---
 
