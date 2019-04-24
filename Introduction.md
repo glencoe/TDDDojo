@@ -20,9 +20,8 @@ http://glencoe.github.com/TDDDojo/
 ---
 
 ## During the course
-- You'll start developing
-your own software project
-- Or implement a project proposed by us (most likely a small lib for graph representation / visualization / serialization / manipulation)
+- You'll start developing your own software project
+- Or implement a project proposed by us
 - We will have a look at problems you encounter and discuss possible solutions
 
 ---
@@ -30,6 +29,7 @@ your own software project
 ## What the course is not
 - A lecture
    - most of the time it's you coding and not me talking
+- No credits
 
 ---
 
@@ -46,15 +46,6 @@ your own software project
 	- You can still mess up <!-- .element: class="fragment" -->	
 	- You still have to design <!-- .element: class="fragment" -->
 	- You'll still have to write other tests <!-- .element: class="fragment" -->
-
----
-
-## Good Quality Code
-- Correct
-- Easily extensible/adjustable
-- Easy to use/understand
-- Without unnecessary functionality
-- Without redundancies
 
 ---
 
@@ -181,7 +172,7 @@ Write a function that yields the prime factors for a given number
 ## First Test
 ```java
 @Test
-void one(void) {
+void one() {
    assertEquals(list(),Kata.primeFactors(1);
 }
 ```
@@ -200,7 +191,7 @@ List<Integer> list(){
 and this to your production code
 ```java
 public class Kata {
-   public List<Integer> primeFactors(int n){
+   public List<Integer> primeFactors(int number){
       return null;
    }
 }
