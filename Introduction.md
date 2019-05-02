@@ -253,6 +253,14 @@ The production code gets more abstract as the tests get more specific
 
 ---
 
+## Word Wrap Kata
+Write a function that takes a string and a column limit.
+The returned string should have line breaks so that the
+text stays within the column limit. We want to insert
+line breaks at word boundaries if possible.
+
+---
+
 ## There are more Katas
 
 - http://codingdojo.org/kata/
